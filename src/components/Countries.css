@@ -1,0 +1,15 @@
+.countries{
+    padding-top: 85px;
+}
+
+@media screen and (max-width:768px){
+    .countries{
+        padding-top: 260px;
+    }
+}
+
+
+.card{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 12px;
+}

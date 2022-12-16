@@ -1,0 +1,71 @@
+.hero-image{
+    background-image: url(../images/hero-bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction:alternate-reverse ;
+    animation-duration: 30s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function:ease-in-out ;
+}
+
+@keyframes animate{
+     0%{
+        background-image: url(../images/hero-bg1.jpg);
+     }
+     50%{
+        background-image: url(../images/hero-bg2.jpg);
+     }
+     100%{
+        background-image: url(../images/hero-bg3.jpg);
+     }
+}
+
+.hero-content{
+    height: 100px;
+    width: 95%;
+    /* background-color: black; */
+}
+
+a{
+    border-radius: 12px;
+}
+
+input{
+    border: none;
+    outline: none;
+    /* width: 80%; */
+    padding: 5px;
+    background: transparent;
+}
+
+@media screen and (max-width:768px){
+    input{
+        border: none;
+        border: 2px solid #4a4a4b;
+        outline: none;
+        padding: 5px;
+        background: transparent;
+        border-radius: 12px;
+    }
+}
+
+.bottom-content{
+    width: 100%;
+}
+
+
+.rounded-div{
+    width: 85px;
+    height: 85px;
+}
